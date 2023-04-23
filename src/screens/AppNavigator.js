@@ -10,6 +10,7 @@ import Friends from '../tabs/Friends';
 import Notification from '../tabs/Notification';
 import Video from '../tabs/Video';
 import Marketplace from '../tabs/Marketplace';
+import Header from './Header';
 
 const Stack = createNativeStackNavigator();
 
@@ -50,6 +51,11 @@ const AppNavigator = () => {
         <Stack.Screen
           name="Marketplace"
           component={Marketplace}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Header"
+          component={Header}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

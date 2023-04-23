@@ -9,6 +9,7 @@ import {
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import {ScrollView} from 'react-native-gesture-handler';
+import Header from '../screens/Header';
 
 const Home = () => {
   const [data, setdata] = useState(null);
@@ -263,11 +264,16 @@ const Home = () => {
                         width: 200,
                         backgroundColor: 'grey',
                         borderRadius: 10,
+                        flexDirection: 'row',
                       }}>
                       <Image
                         source={require('../images/comment.png')}
                         style={{tintColor: 'white', height: 20, width: 20}}
                       />
+                      <Text
+                        style={{color: 'white', marginLeft: 5, fontSize: 18}}>
+                        6
+                      </Text>
                     </TouchableOpacity>
                   </View>
                 </View>
